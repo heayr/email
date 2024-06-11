@@ -12,27 +12,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <header class="header">
-    <img src="./logo.svg" alt="logo" />
+    <img  draggable="false" src="./logo.svg" alt="logo" />
     <p class="header_text">
       Ассоциация международных автомобильных перевозчиков
     </p>
   </header>
   <body>
     <main class="main">
-      <div class="first-background">
-        <section class="section">
-          <div class="card-wrapper">
-            <div class="card">Контент</div>
-            <div class="card">Контент</div>
-            <div class="card">Контент</div>
-            <div class="card">Контент</div>
-            <div class="card">Контент</div>
-            <div class="card">Контент</div>
-            <div class="card">Контент</div>
-            <div class="card">Контент</div>
+      <div class="first-background"></div>
+      <section class="section">
+        <div class="card-wrapper">
+          <div class="card">
           </div>
-        </section>
-      </div>
+          <div class="card">
+            <a draggable="false" target="_blank" href="https://www.asmap-service.ru/catalog/komplekty_i_sostavlyayushchie_adr/komplekt_adr_klassy_3_4_8_9_nefteprodukty/">
+            <img class="card-image" src="https://www.asmap-service.ru/upload/iblock/ec3/y72cuq92bd6dylra85xsjeiitc1343nu.jpg" alt="adr комплект" draggable="false" >
+          </a>
+          </div>
+          <div class="card">Контент</div>
+          <div class="card">Контент</div>
+          <div class="card">Контент</div>
+          <div class="card">Контент</div>
+          <div class="card">Контент</div>
+          <div class="card">Контент</div>
+        </div>
+      </section>
+      <section class="section promo-section">
+        <div class="card-wrapper">
+          <p class="promo-text">Запчасти и комплектующие для грузовых и легковых автомобилей, широкий выбор различных аксессуаров</p>
+          <p class="promo-text">Автомасла</p>
+          <p class="promo-text">Информационно-справочная литература, бланки, дорожные карты России и Европы, журналы, накладные</p>
+          <p class="promo-text">Доставка по Москве собственной курьерской службой</p>
+          <p class="promo-text">Доставка по России надежными партнерскими курьерскими службами</p>
+          <p class="promo-text">Бесплатный самовывоз с нашего склада в Москве</p>
+          <p class="promo-text">Удобная онлайн-оплата товаров либо оплата по выставленному счету</p>
+      </section>
     </main>
   </body>
 </html>
@@ -78,6 +92,7 @@
     margin: 0 auto;
     /* width: 980px; */
     width: 90%;
+    height: 45%;
     background: no-repeat;
     background-image: url(./big_new_bg-min.jpg);
     border: 1px solid rgba(255, 0, 0, 0.849);
@@ -102,11 +117,26 @@
   }
 
   .card {
-    width: 160px;
-    height: 160px;
+    width: 200px;
+    height: 200px;
     border: 1px solid rgba(255, 0, 0, 0.849);
     margin: 20px 20px;
+    border-radius: 15px;
+    position: relative;
   }
+
+  .card-image {
+    width: 100%;
+    height: 100%;
+    /* width: 240px; */
+    /* height: 200px; */
+    border-radius: 15px;
+    object-fit: cover;
+  }
+
+  
+
+
 
   @media only screen and (max-width: 1024px) {
   }
