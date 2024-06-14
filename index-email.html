@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Рассылка: Сопутствующие товары и комплектующие</title>
+    <style>
+      /* Устанавливаем стили для email рассылки */
+      body,
+      table {
+        padding: 0;
+        margin: 0;
+      }
+      td {
+        padding: 0;
+        margin: 0;
+      }
+      a {
+        -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+      }
+      table,
+      td {
+        mso-table-lspace: 0pt;
+        mso-table-rspace: 0pt;
+      }
+      img {
+        -ms-interpolation-mode: bicubic;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        width: 100% !important;
+        height: 100% !important;
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+      }
+      .content {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+      .header,
+      .main,
+      .footer {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+      }
+      .header {
+        background-color: #004388;
+        padding: 20px;
+      }
+      .header img {
+        /* max-width: 150px; */
+        height: auto;
+      }
+      .header_text {
+        color: white;
+        font-size: 20px;
+        margin-top: 10px;
+      }
+      .main {
+        background-color: #ffffff;
+        /* padding: 20px; */
+      }
+      .section {
+        margin-bottom: 20px;
+      }
+      .banner {
+        position: relative;
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+      .banner img {
+        width: 100%;
+        height: auto;
+      }
+      .banner-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        font-size: 24px;
+        padding: 10px 20px;
+        border-radius: 10px;
+      }
+      .card {
+        width: 48%;
+        display: inline-block;
+        vertical-align: top;
+        margin: 1%;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        overflow: hidden;
+        background-color: #f9f9f9;
+      }
+      .card img {
+        width: 100%;
+        height: auto;
+      }
+      .card-content {
+        padding: 10px;
+      }
+      .card-title {
+        font-size: 18px;
+        color: #333;
+      }
+      .card-text {
+        font-size: 14px;
+        color: #777;
+      }
+      .promo-section {
+        background-color: #e9f7fd;
+        padding: 20px;
+        text-align: left;
+        border-radius: 10px;
+      }
+      .promo-text {
+        font-size: 16px;
+        color: #333;
+        margin: 5px 0;
+      }
+      .footer {
+        background-color: #004388;
+        padding: 20px;
+        color: white;
+        font-size: 14px;
+      }
+      .footer a {
+        color: white;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <table
+      role="presentation"
+      cellspacing="0"
+      cellpadding="0"
+      border="0"
+      width="100%"
+    >
+      <tr>
+        <td class="content">
+          <!-- Header Section -->
+          <table class="header">
+            <tr>
+              <td>
+                <img
+                  draggable="false"
+                  src="https://www.asmap-service.ru/local/templates/asmap/assets/img/logo.svg"
+                  alt="logo"
+                />
+                <p class="header_text">
+                  Ассоциация международных автомобильных перевозчиков
+                </p>
+              </td>
+            </tr>
+          </table>
+
+          <!-- Main Content Section -->
+          <table class="main">
+            <tr>
+              <td>
+                <!-- Large Banner Section -->
+                <div class="section">
+                  <div class="banner">
+                    <img
+                      src="./фрейм 2.svg"
+                      alt="Большой баннер"
+                      draggable="false"
+                    />
+                    <!-- <div class="banner-text">Товары для вашего бизнеса</div> -->
+                  </div>
+                </div>
+
+                <!-- Product Cards -->
+                <div class="section">
+                  <div class="card">
+                    <img
+                      src="https://via.placeholder.com/280x180"
+                      alt="Комплектующие 1"
+                    />
+                    <div class="card-content">
+                      <h3 class="card-title">Комплектующие 1</h3>
+                      <p class="card-text">Описание комплектующих 1.</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img
+                      src="https://via.placeholder.com/280x180"
+                      alt="Комплектующие 2"
+                    />
+                    <div class="card-content">
+                      <h3 class="card-title">Комплектующие 2</h3>
+                      <p class="card-text">Описание комплектующих 2.</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img
+                      src="https://via.placeholder.com/280x180"
+                      alt="Комплектующие 3"
+                    />
+                    <div class="card-content">
+                      <h3 class="card-title">Комплектующие 3</h3>
+                      <p class="card-text">Описание комплектующих 3.</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img
+                      src="https://via.placeholder.com/280x180"
+                      alt="Комплектующие 4"
+                    />
+                    <div class="card-content">
+                      <h3 class="card-title">Комплектующие 4</h3>
+                      <p class="card-text">Описание комплектующих 4.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Promotional Text Section -->
+                <div class="promo-section">
+                  <h3 style="font-size: 20px; color: #004388">
+                    Почему стоит выбрать нас?
+                  </h3>
+                  <p class="promo-text">
+                    Широкий выбор запчастей и комплектующих для грузовых и
+                    легковых автомобилей.
+                  </p>
+                  <p class="promo-text">
+                    Удобная онлайн-оплата товаров и быстрая доставка по всей
+                    России.
+                  </p>
+                  <p class="promo-text">
+                    Профессиональное обслуживание и поддержка клиентов.
+                  </p>
+                </div>
+              </td>
+            </tr>
+          </table>
+
+          <!-- Footer Section -->
+          <table class="footer">
+            <tr>
+              <td>
+                <p>
+                  &copy; 2024 Ассоциация международных автомобильных
+                  перевозчиков. Все права защищены.
+                </p>
+                <p>
+                  <a href="https://www.asmap-service.ru" target="_blank"
+                    >Посетите наш сайт</a
+                  >
+                </p>
+                <p>
+                  Контакты:
+                  <a href="mailto:info@asmap-service.ru"
+                    >info@asmap-service.ru</a
+                  >
+                  | Телефон: +7 (495) 123-45-67
+                </p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

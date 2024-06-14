@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Email Example</title>
+    <style>
+      /* Отключаем стили по умолчанию для email клиентов */
+      body,
+      table,
+      td,
+      a {
+        -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+      }
+      table,
+      td {
+        mso-table-lspace: 0pt;
+        mso-table-rspace: 0pt;
+      }
+      img {
+        -ms-interpolation-mode: bicubic;
+      }
+
+      /* Установка стилей по умолчанию */
+      body {
+        margin: 0;
+        padding: 0;
+        width: 100% !important;
+        height: 100% !important;
+        font-family: Arial, sans-serif;
+      }
+
+      .container {
+        width: 100%;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      .header,
+      .main,
+      .section {
+        width: 100%;
+        margin: 0 auto;
+      }
+
+      .header {
+        background-color: #004388;
+        padding: 10px 0;
+        text-align: center;
+      }
+
+      .header img {
+        max-width: 150px;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+      }
+
+      .header_text {
+        color: white;
+        font-size: 16px;
+        margin-top: 10px;
+      }
+
+      .main {
+        background-color: #f0f1f1;
+        padding: 20px;
+        border: 1px solid #00ff73;
+      }
+
+      .first-background {
+        background-image: url("big_new_bg-min.jpg");
+        /* background-size: contain; */
+        background-repeat: no-repeat;
+        height: 320px;
+        border: 1px solid #ff0000;
+      }
+
+      .section {
+        background-color: rgba(240, 248, 255, 0.849);
+        border-radius: 5%;
+        padding: 20px;
+      }
+
+      .card-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: flex-start;
+      }
+
+      .card {
+        width: 200px;
+        height: 200px;
+        border: 1px solid #ff0000;
+        margin: 20px;
+        border-radius: 15px;
+      }
+
+      .card img {
+        width: 100%;
+        height: 100%;
+        border-radius: 15px;
+        object-fit: cover;
+      }
+
+      .promo-text {
+        font-size: 14px;
+        margin: 10px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <table
+      role="presentation"
+      cellspacing="0"
+      cellpadding="0"
+      border="0"
+      width="100%"
+    >
+      <tr>
+        <td class="container">
+          <!-- Header Section -->
+          <table
+            align="center"
+            border="0"
+            cellpadding="0"
+            cellspacing="0"
+            width="100%"
+            class="header"
+          >
+            <tr>
+              <td align="center">
+                <img
+                  src="https://www.asmap-service.ru/local/templates/asmap/assets/img/logo.svg"
+                  alt="logo"
+                />
+                <p class="header_text">
+                  Ассоциация международных автомобильных перевозчиков
+                </p>
+              </td>
+            </tr>
+          </table>
+
+          <!-- Main Section -->
+          <table
+            align="center"
+            border="0"
+            cellpadding="0"
+            cellspacing="0"
+            width="100%"
+            class="main"
+          >
+            <tr>
+              <td>
+                <div class="first-background"></div>
+              </td>
+            </tr>
+            <tr>
+              <td class="section">
+                <div class="card-wrapper">
+                  <!-- Cards with content -->
+                  <div class="card">
+                    <a
+                      href="https://www.asmap-service.ru/catalog/komplekty_i_sostavlyayushchie_adr/komplekt_adr_klassy_3_4_8_9_nefteprodukty/"
+                      target="_blank"
+                    >
+                      <img
+                        src="https://www.asmap-service.ru/upload/iblock/ec3/y72cuq92bd6dylra85xsjeiitc1343nu.jpg"
+                        alt="adr комплект"
+                      />
+                    </a>
+                  </div>
+                  <div class="card">Контент</div>
+                  <div class="card">Контент</div>
+                  <div class="card">Контент</div>
+                  <div class="card">Контент</div>
+                  <div class="card">Контент</div>
+                  <div class="card">Контент</div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="section">
+                <div class="card-wrapper">
+                  <p class="promo-text">
+                    Запчасти и комплектующие для грузовых и легковых
+                    автомобилей, широкий выбор различных аксессуаров
+                  </p>
+                  <p class="promo-text">Автомасла</p>
+                  <p class="promo-text">
+                    Информационно-справочная литература, бланки, дорожные карты
+                    России и Европы, журналы, накладные
+                  </p>
+                  <p class="promo-text">
+                    Доставка по Москве собственной курьерской службой
+                  </p>
+                  <p class="promo-text">
+                    Доставка по России надежными партнерскими курьерскими
+                    службами
+                  </p>
+                  <p class="promo-text">
+                    Бесплатный самовывоз с нашего склада в Москве
+                  </p>
+                  <p class="promo-text">
+                    Удобная онлайн-оплата товаров либо оплата по выставленному
+                    счету
+                  </p>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
