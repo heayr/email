@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <title>Рассылка: Сопутствующие товары и комплектующие</title>
+    <!-- !стили -->
     <style>
       /* Устанавливаем стили для email рассылки */
       body,
@@ -33,6 +34,8 @@
         height: 100% !important;
         font-family: Arial, sans-serif;
         background-color: #f4f4f4;
+        /* max-width: 590px; */
+        /* margin: 0 auto; */
       }
       .content {
         width: 100%;
@@ -48,30 +51,32 @@
       }
       .header {
         background-color: #004388;
-        padding: 20px;
+        padding: 20px 0;
       }
       .header img {
         /* max-width: 150px; */
         height: auto;
+        height: 120px;
+      }
+      .logo-link {
+        text-decoration: none;
       }
       .header_text {
         color: white;
         font-size: 20px;
-        margin-top: 10px;
+        margin: 20px auto 0;
+        max-width: 40%;
       }
       .main {
         background-color: #ffffff;
-        /* padding: 20px; */
       }
       .section {
-        margin-bottom: 20px;
       }
       .banner {
         position: relative;
         width: 100%;
         max-width: 600px;
-        margin: 0 auto;
-        border-radius: 10px;
+        margin: -2px auto 0;
         overflow: hidden;
       }
       .banner img {
@@ -89,31 +94,6 @@
         padding: 10px 20px;
         border-radius: 10px;
       }
-      .card {
-        width: 48%;
-        display: inline-block;
-        vertical-align: top;
-        margin: 1%;
-        border: 1px solid #ddd;
-        border-radius: 10px;
-        overflow: hidden;
-        background-color: #f9f9f9;
-      }
-      .card img {
-        width: 100%;
-        height: auto;
-      }
-      .card-content {
-        padding: 10px;
-      }
-      .card-title {
-        font-size: 18px;
-        color: #333;
-      }
-      .card-text {
-        font-size: 14px;
-        color: #777;
-      }
       .promo-section {
         background-color: #e9f7fd;
         padding: 20px;
@@ -125,6 +105,67 @@
         color: #333;
         margin: 5px 0;
       }
+
+      /* стили карточек */
+      .email-container {
+        max-width: 597px;
+        margin: -7px auto 0;
+        background-color: #eeeeee3a;
+        /* border: 1px solid #666; */
+      }
+      .product-table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      .product-cell {
+        width: 50%;
+        padding: 10px;
+        box-sizing: border-box;
+      }
+      .product-image {
+        width: 100%;
+        max-height: 208px;
+        height: auto;
+        display: block;
+      }
+      .product-name {
+        font-size: 16px;
+        font-weight: bold;
+        margin: 10px 0 5px;
+      }
+      .product-description {
+        font-size: 14px;
+        color: #666;
+        margin-bottom: 10px;
+      }
+      .product-prices {
+        margin-bottom: 10px;
+      }
+      .old-price {
+        text-decoration: line-through;
+        color: #999;
+        margin-right: 10px;
+      }
+      .new-price {
+        color: #e63636;
+        font-weight: bold;
+      }
+      .product-button {
+        display: inline-block;
+        padding: 10px 90px;
+        background-color: #004488b4;
+        color: #fff;
+        text-decoration: none;
+      }
+      @media screen and (max-width: 600px) {
+        .product-cell {
+          width: 100%;
+          display: block;
+          margin-bottom: 20px;
+        }
+      }
+      /* стили карточек */
+
       .footer {
         background-color: #004388;
         padding: 20px;
@@ -136,6 +177,7 @@
         text-decoration: none;
       }
     </style>
+    <!-- !стили -->
   </head>
   <body>
     <table
@@ -151,16 +193,23 @@
           <table class="header">
             <tr>
               <td>
-                <img
-                  class="logo"
+                <a
+                  class="logo-link"
+                  href="https://www.asmap-service.ru/catalog/"
+                  target="_blank"
                   draggable="false"
-                  src="https://www.asmap-service.ru/local/templates/asmap/assets/img/footer_logo.svg"
-                  alt="logo"
-                />
+                >
+                  <img
+                    class="logo"
+                    draggable="false"
+                    src="https://www.asmap-service.ru/local/templates/asmap/assets/img/footer_logo.svg"
+                    alt="Здесь Логотип, Если вы видите этот текст, разрешите вашему почтовому клиенту скачивать изображения, тут появится картинка"
+                  />
 
-                <p class="header_text">
-                  Ассоциация международных автомобильных перевозчиков
-                </p>
+                  <p class="header_text">
+                    Ассоциация международных автомобильных перевозчиков
+                  </p>
+                </a>
               </td>
             </tr>
           </table>
@@ -174,55 +223,168 @@
                   <div class="banner">
                     <img
                       src="https://i.postimg.cc/RhSPw34k/banner.png"
-                      alt="Большой баннер"
+                      alt="Здесь Большой Баннер, Если вы видите этот текст, разрешите вашему почтовому клиенту скачивать изображения, тут появится картинка"
                       draggable="false"
                     />
                     <!-- <div class="banner-text">Товары для вашего бизнеса</div> -->
                   </div>
                 </div>
 
-                <!-- Product Cards -->
-                <div class="section">
-                  <div class="card">
-                    <img
-                      src="https://via.placeholder.com/280x180"
-                      alt="Комплектующие 1"
-                    />
-                    <div class="card-content">
-                      <h3 class="card-title">Комплектующие 1</h3>
-                      <p class="card-text">Описание комплектующих 1.</p>
-                    </div>
-                  </div>
-                  <div class="card">
-                    <img
-                      src="https://via.placeholder.com/280x180"
-                      alt="Комплектующие 2"
-                    />
-                    <div class="card-content">
-                      <h3 class="card-title">Комплектующие 2</h3>
-                      <p class="card-text">Описание комплектующих 2.</p>
-                    </div>
-                  </div>
-                  <div class="card">
-                    <img
-                      src="https://via.placeholder.com/280x180"
-                      alt="Комплектующие 3"
-                    />
-                    <div class="card-content">
-                      <h3 class="card-title">Комплектующие 3</h3>
-                      <p class="card-text">Описание комплектующих 3.</p>
-                    </div>
-                  </div>
-                  <div class="card">
-                    <img
-                      src="https://via.placeholder.com/280x180"
-                      alt="Комплектующие 4"
-                    />
-                    <div class="card-content">
-                      <h3 class="card-title">Комплектующие 4</h3>
-                      <p class="card-text">Описание комплектующих 4.</p>
-                    </div>
-                  </div>
+                <!-- Оптимизированные карточки под email клиенты кроме outlook -->
+                <div class="email-container">
+                  <table class="product-table">
+                    <!-- Первый ряд карточек -->
+                    <tr>
+                      <td class="product-cell">
+                        <img
+                          src="https://www.asmap-service.ru/upload/iblock/c44/rlkonspq0ri3gih7dgdshlmeykhlol7b.jpg"
+                          alt="Если вы видите этот текст, разрешите вашему почтовому клиенту скачивать изображения, тут появится картинка"
+                          class="product-image"
+                          draggable="false"
+                        />
+                        <div class="product-name">Сумка ADR (Россия)</div>
+                        <div class="product-description">
+                          Сумка для хранения набора ADR
+                        </div>
+                        <div class="product-prices">
+                          <span class="old-price">&#8381;780</span>
+                          <span class="new-price">&#8381;700</span>
+                        </div>
+                        <a
+                          target="_blank"
+                          href="https://www.asmap-service.ru/catalog/komplekty_i_sostavlyayushchie_adr/sumka_pustaya_pod_adr_rossiya/"
+                          class="product-button"
+                          draggable="false"
+                          >Купить</a
+                        >
+                      </td>
+                      <td class="product-cell">
+                        <img
+                          src="https://www.asmap-service.ru/upload/iblock/f5a/m2q0t6la2h4o6a7qvxsv4g2cwqvavu0h.png"
+                          alt="Если вы видите этот текст, разрешите вашему почтовому клиенту скачивать изображения, тут появится картинка"
+                          class="product-image"
+                          draggable="false"
+                        />
+                        <div class="product-name">Табличка ADR (400х300мм)</div>
+                        <div class="product-description">
+                          Несгибаемая, Нержавейка
+                        </div>
+                        <div class="product-prices">
+                          <span class="old-price">&#8381;580</span>
+                          <span class="new-price">&#8381;550</span>
+                        </div>
+                        <a
+                          target="_blank"
+                          href="https://www.asmap-service.ru/catalog/tablichki_paneli/tablichka_adr_400kh300mm_ne_sgibaemaya_nerzhaveyka/"
+                          class="product-button"
+                          draggable="false"
+                          >Купить</a
+                        >
+                      </td>
+                    </tr>
+                    <!-- Второй ряд карточек -->
+                    <tr>
+                      <td class="product-cell">
+                        <img
+                          src="https://www.asmap-service.ru/upload/iblock/a4d/w4o6q806do9cye0vcs2fqzvjle13195y.jpg"
+                          alt="Если вы видите этот текст, разрешите вашему почтовому клиенту скачивать изображения, тут появится картинка"
+                          class="product-image"
+                          draggable="false"
+                        />
+                        <div class="product-name">
+                          Ремень крепёжный для грузовиков
+                        </div>
+                        <div class="product-description">
+                          10m, 10тонн. AS+ Россия (усиленный)
+                        </div>
+                        <div class="product-prices">
+                          <span class="old-price">&#8381;1400</span>
+                          <span class="new-price">&#8381;1299</span>
+                        </div>
+                        <a
+                          target="_blank"
+                          href="https://www.asmap-service.ru/catalog/remni_i_krepleniya_gruzov_/remen_krepyezhnyy_dlya_gruzovikov_10m_10tonn_as_rossiya_usilennyy/"
+                          class="product-button"
+                          draggable="false"
+                          >Купить</a
+                        >
+                      </td>
+                      <td class="product-cell">
+                        <img
+                          src="https://www.asmap-service.ru/upload/iblock/0c6/k55dyd2mgkddyhz0pbm9xbcih3wffaii.jpg"
+                          alt="Если вы видите этот текст, разрешите вашему почтовому клиенту скачивать изображения, тут появится картинка"
+                          class="product-image"
+                          draggable="false"
+                        />
+                        <div class="product-name">
+                          Ремень крепёжный для грузовиков
+                        </div>
+                        <div class="product-description">
+                          Wistra 12m, 5тонн. (Германия)
+                        </div>
+                        <div class="product-prices">
+                          <span class="old-price">&#8381;2700</span>
+                          <span class="new-price">&#8381;2299</span>
+                        </div>
+                        <a
+                          target="_blank"
+                          href="https://www.asmap-service.ru/catalog/remni_i_krepleniya_gruzov_/remen_krepyezhnyy_dlya_gruzovikov_12m_5tonn_wistra_/"
+                          class="product-button"
+                          draggable="false"
+                          >Купить</a
+                        >
+                      </td>
+                    </tr>
+                    <!-- Третий ряд карточек -->
+                    <tr>
+                      <td class="product-cell">
+                        <img
+                          src="https://www.asmap-service.ru/upload/iblock/986/0rn4kv1n80mvkxfiiwwnye9kkesxitus.jpg"
+                          alt="Если вы видите этот текст, разрешите вашему почтовому клиенту скачивать изображения, тут появится картинка"
+                          class="product-image"
+                          draggable="false"
+                        />
+                        <div class="product-name">
+                          Рулоны для цифр.Тахографов
+                        </div>
+                        <div class="product-description">(3 шт.) Россия</div>
+                        <div class="product-prices">
+                          <span class="old-price">&#8381;200</span>
+                          <span class="new-price">&#8381;150</span>
+                        </div>
+                        <a
+                          target="_blank"
+                          href="https://www.asmap-service.ru/catalog/bumaga_dlya_takhografa/rulony_dlya_tsifr_takhografov_3_sht_rossiya/"
+                          class="product-button"
+                          draggable="false"
+                          >Купить</a
+                        >
+                      </td>
+                      <td class="product-cell">
+                        <img
+                          src="https://www.asmap-service.ru/upload/iblock/ee1/xg24ab75qfyco4u2ladyycylce2334yv.jpg"
+                          alt="Если вы видите этот текст, разрешите вашему почтовому клиенту скачивать изображения, тут появится картинка"
+                          class="product-image"
+                          draggable="false"
+                        />
+                        <div class="product-name">Лента светоотражающая</div>
+                        <div class="product-description">
+                          (Белая/Красная/Жёлтая)50 м. Италия
+                        </div>
+                        <div class="product-prices">
+                          <span class="old-price">&#8381;6100</span>
+                          <span class="new-price">&#8381;5500</span>
+                        </div>
+                        <a
+                          target="_blank"
+                          href="https://www.asmap-service.ru/catalog/nakleyki_svetootrazhayushchie_plyenki/lenta_svetootrazhayushchaya_dlya_tverdykh_poverkhnostey_belaya_krasnaya_zhyeltaya_50_m_italiya/"
+                          class="product-button"
+                          draggable="false"
+                          >Купить</a
+                        >
+                      </td>
+                    </tr>
+                  </table>
                 </div>
 
                 <!-- Promotional Text Section -->
@@ -261,10 +423,10 @@
                 </p>
                 <p>
                   Контакты:
-                  <a href="mailto:info@asmap-service.ru"
-                    >info@asmap-service.ru</a
+                  <a href="mailto:aevseev@asmap-service.ru"
+                    >aevseev@asmap-service.ru</a
                   >
-                  | Телефон: +7 (495) 123-45-67
+                  | Телефон: +7(985)311-56-83
                 </p>
               </td>
             </tr>
