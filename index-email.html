@@ -6,15 +6,15 @@
     <!-- !стили -->
     <style>
       /* Устанавливаем стили для email рассылки */
+      div {
+        padding: 0;
+        margin: 0;
+        outline: none;
+        border: none;
+      }
       body,
-      table {
-        padding: 0;
-        margin: 0;
-      }
-      td {
-        padding: 0;
-        margin: 0;
-      }
+      table,
+      td,
       a {
         -webkit-text-size-adjust: 100%;
         -ms-text-size-adjust: 100%;
@@ -28,18 +28,32 @@
         -ms-interpolation-mode: bicubic;
       }
       body {
+        margin: 0;
         padding: 0;
         width: 100% !important;
         height: 100% !important;
         font-family: Arial, sans-serif;
         background-color: #f4f4f4;
-        /* max-width: 590px; */
-        margin: 0 auto;
+      }
+      table,
+      td,
+      tr,
+      tbody {
+        padding: 0;
+        margin: 0;
+        outline: none;
+        border: none;
+        vertical-align: none;
       }
       .content {
         width: 100%;
         max-width: 600px;
         margin: 0 auto;
+
+        /* display: block; */
+      }
+      .logo-link {
+        text-decoration: none;
       }
       .header,
       .main,
@@ -48,39 +62,34 @@
         margin: 0 auto;
         text-align: center;
       }
+
       .header {
         background-color: #004388;
-        padding: 20px 0;
+        padding: 20px;
       }
       .header img {
-        /* max-width: 150px; */
-        height: auto;
-        height: 120px;
-      }
-      .logo-link {
-        text-decoration: none;
+        height: 100px;
       }
       .header_text {
         color: white;
         font-size: 20px;
-        margin: 20px auto 0;
-        max-width: 40%;
+        margin-top: 10px;
       }
       .main {
         background-color: #ffffff;
       }
       .section {
+        margin: 0 auto;
       }
       .banner {
-        position: relative;
         width: 100%;
         max-width: 600px;
-        margin: -2px auto 0;
+        margin: 0px auto 0;
         overflow: hidden;
       }
       .banner img {
         width: 100%;
-        height: auto;
+        overflow: hidden;
       }
       .banner-text {
         position: absolute;
@@ -108,7 +117,7 @@
       /* стили карточек */
       .email-container {
         max-width: 597px;
-        margin: -7px auto 0;
+        margin: 0px auto 0;
         background-color: #eeeeee3a;
         /* border: 1px solid #666; */
       }
@@ -193,6 +202,7 @@
             <tr>
               <td>
                 <a
+                  title="Посетите наш магазин"
                   class="logo-link"
                   href="https://www.asmap-service.ru/catalog/"
                   target="_blank"
@@ -392,8 +402,8 @@
                     Почему стоит выбрать нас?
                   </h3>
                   <p class="promo-text">
-                    Широкий выбор запчастей и комплектующих для грузовых и
-                    легковых автомобилей.
+                    Широкий выбор запчастей и комплектующих для грузовых
+                    автомобилей.
                   </p>
                   <p class="promo-text">
                     Удобная онлайн-оплата товаров и быстрая доставка по всей
@@ -411,6 +421,22 @@
           <table class="footer">
             <tr>
               <td>
+                <div class="logo-footer">
+                  <a
+                    title="Посетите наш магазин"
+                    class="logo-link"
+                    href="https://www.asmap-service.ru/catalog/"
+                    target="_blank"
+                    draggable="false"
+                  >
+                    <img
+                      class="logo"
+                      draggable="false"
+                      src="https://www.asmap-service.ru/local/templates/asmap/assets/img/footer_logo.svg"
+                      alt="Здесь Логотип, Если вы видите этот текст, разрешите вашему почтовому клиенту скачивать изображения, тут появится картинка"
+                    />
+                  </a>
+                </div>
                 <p>
                   &copy; 2024 Ассоциация международных автомобильных
                   перевозчиков. Все права защищены.
